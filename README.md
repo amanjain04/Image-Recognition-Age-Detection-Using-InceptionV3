@@ -11,24 +11,39 @@ Data Files
 Import libraries
 
 import pandas as pd
+
 import numpy as np
+
 import cv2    
+
 import matplotlib.pyplot as plt
+
 import seaborn as sns
+
 from sklearn.metrics import f1_score
 
 from keras.applications.inception_v3 import InceptionV3, preprocess_input
+
 from keras import optimizers
+
 from keras.models import Sequential, Model 
+
 from keras.layers import Dropout, Flatten, Dense, GlobalAveragePooling2D
+
 from keras.callbacks import ModelCheckpoint
+
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+
 from keras.utils import np_utils
+
 from keras.optimizers import SGD
 
 from IPython.core.display import display, HTML
+
 from PIL import Image
+
 from io import BytesIO
+
 import base64
 
 plt.style.use('ggplot')
